@@ -88,6 +88,38 @@ body {
     margin-bottom: 28px;
 }
 
+.form-container-center {
+    justify-items: center;
+}
+
+.email-image {
+    width: 132px;
+    height: 132px;
+    border-radius: 50%;
+    background-color: var(--text-input-field);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 24px;
+}
+
+.email {
+    width: 80px;
+}
+
+.resend {
+    font-size: var(--sm);
+}
+
+.resend span {
+    color: var(--dark);
+}
+
+.resend a {
+    color: var(--hospital-green);
+    text-decoration: none;
+}
+
 @media (max-width: 640px) {
     .logo {
         display: block;
