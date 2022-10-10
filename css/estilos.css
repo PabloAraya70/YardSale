@@ -41,7 +41,12 @@ body {
     font-size: var(--lg);
     margin-bottom: 12px;
     text-align: center;
+}
 
+.title-izquierda {
+    font-size: var(--lg);
+    text-align: left;
+    margin-bottom: 36px;
 }
 
 .subtitle {
@@ -141,6 +146,14 @@ body {
     margin-top: 48px;
     margin-bottom: 28px;
     border: 1px solid var(--hospital-green);
+}
+
+.myaccount {
+    color: var(--dark);
+    height: 32px;
+    font-size: var(--md);
+    padding: 8px;
+    margin-bottom: 16px;
 }
 
 @media (max-width: 640px) {
