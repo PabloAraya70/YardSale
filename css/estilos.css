@@ -364,6 +364,95 @@ body {
     text-align: end;
 }
 
+.articlesmyorders {
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    gap: 16px;
+    align-items: center;
+    margin-bottom: 24px;
+    border-radius: 8px;
+    padding: 0 24px;
+}
+
+.articlesmyorders img {
+    padding-left: 16px;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid var(--very-light-pink);
+}
+
+.menu {
+    display: none;
+}
+
+.navbar-left {
+    display: flex;
+    align-content: center;
+    align-items: center;
+    margin-left: 12px;
+}
+
+.logomenu {
+    width: 100px;
+    align-content: center;
+}
+
+.navbar-left ul, .navbar-right ul {
+    list-style: none;
+    display: flex;
+    height: 60px;
+    align-items: center;
+}
+
+.navbar-left ul li {
+    margin: 0 16px;
+    align-items: center;
+}
+
+.navbar-left ul li a,
+.navbar-right ul li  {
+    text-decoration: none;
+    color: var(--very-light-pink);
+    font-size: var(--sm);
+    padding: 4px 16px;
+    border-radius: 8px;
+    border: 1px solid var(--white);
+}
+
+.navbar-left ul li a:hover,
+.navbar-right ul li a:hover {
+    color: var(--hospital-green);
+    border: 1px solid var(--hospital-green);
+}
+
+.navbar-right ul li:nth-child(1) {
+    color: var(--dark);
+    font-size: var(--sm);
+    margin-right: 12px;
+}
+
+.shopping-cart {
+    position: relative;
+}
+.shopping-cart div {
+    width: 16px;
+    height: 16px;
+    background-color: var(--hospital-green);
+    border-radius: 50%;
+    font-size: var(--sm);
+    font-weight: bold;
+    position: absolute;
+    top: -4px;
+    right: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--black);
+}
+
 @media (max-width: 640px) {
     .logo {
         display: block;
@@ -391,4 +480,15 @@ body {
         object-fit: cover;
     }
     
+    .menu {
+        display: block;
+    }
+
+    .navbar-left ul {
+        display: none;
+    }
+
+    .navbar-email {
+        display: none;
+    }
 }
